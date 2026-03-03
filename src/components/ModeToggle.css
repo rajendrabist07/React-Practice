@@ -1,0 +1,74 @@
+.mode-container {
+  padding: 30px;
+  border-style: solid;
+  border-width: 1px;
+  border-left-width: 15px;
+  border-left-color: #8b86ea;
+  border-radius: 20px;
+  margin: 2rem auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.mode-title {
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+.mode-description {
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.mode-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mode-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+  background-color: #f0f0f0;
+  color: #333;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.mode-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.mode-btn.active {
+  outline: 3px solid #8b86ea;
+  outline-offset: 2px;
+}
+
+.dark-btn {
+  background-color: #444;
+  color: white;
+}
+
+.night-btn {
+  background-color: #172a45;
+  color: #64ffda;
+}
+
+.deep-btn {
+  background-color: #111;
+  color: white;
+}

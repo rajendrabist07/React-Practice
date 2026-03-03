@@ -1,0 +1,55 @@
+.study-materials {
+  max-width: 1300px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-image: linear-gradient(180deg, #e5e9ed, #eeedf6);
+  color: #0d0736;
+  border-radius: 12px;
+  font-family: sans-serif;
+}
+
+.study-materials h1 {
+  text-align: center;
+  color: #070628;
+  margin-bottom: 2rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background-image: linear-gradient(120deg, #f1e3f4, #cadff0);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 10px 8px #d0e5f899;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px) scale(1.02);
+}
+
+.card h4 {
+  color: #0af;
+  margin-bottom: 0.75rem;
+}
+
+.card p,
+.card ul {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 0.8rem;
+}
+
+.card ul {
+  padding-left: 1rem;
+}
+
+.note {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #070929;
+}
