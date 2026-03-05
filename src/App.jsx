@@ -4,7 +4,18 @@ import ModeToggle from './components/ModeToggle';
 import UserProfile from './components/ObjectState';
 import TodoList from './components/ArrayStatus';
 import StudyMaterials from './components/StudyMaterials';
-import UserData, { Searchfilter, Timer, Dashboard } from './components/ComponentMount';
+import {
+  UseStateHook,
+  UseEffectHook,
+  UseContextHook,
+  UseContextProvider,
+  UseRefHook,
+  UseMemoHook,
+  UseCallbackHook,
+  UseReducerHook,
+  TodoApp
+} from './components/Hooks';
+
 
 
 
@@ -79,10 +90,26 @@ function App() {
       <ModeToggle />
       <UserProfile />
       <TodoList />
-      <UserData />
-      <Searchfilter />
-      <Timer />
-      <Dashboard />
+
+      {/* ============ ALL REACT HOOKS SHOWCASE ============ */}
+      <h1 style={{ textAlign: 'center', fontSize: '48px', marginTop: '60px', background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', backgroundClip: 'text', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
+        🎣 React Hooks Masterclass
+      </h1>
+
+      <UseStateHook />
+      <UseEffectHook />
+
+      <UseContextProvider>
+        <UseContextHook />
+      </UseContextProvider>
+
+      <UseRefHook />
+      <UseMemoHook />
+      <UseCallbackHook />
+      <UseReducerHook />
+
+      {/* ============ PRO TODO APP ============ */}
+      <TodoApp />
     </>
   )
 }
