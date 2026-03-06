@@ -15,6 +15,7 @@ import {
   UseReducerHook,
   TodoApp
 } from './components/Hooks';
+import Clock from './components/Clock';
 
 
 
@@ -110,6 +111,8 @@ function App() {
 
       {/* ============ PRO TODO APP ============ */}
       <TodoApp />
+
+      <Clock />
     </>
   )
 }
