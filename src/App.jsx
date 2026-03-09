@@ -16,6 +16,7 @@ import {
   TodoApp
 } from './components/Hooks';
 import Clock from './components/Clock';
+import API from './components/API';
 
 
 
@@ -53,7 +54,7 @@ function App() {
   return (
     <>
 
-      <StudyMaterials />
+      {/* <StudyMaterials />
 
 
 
@@ -92,7 +93,7 @@ function App() {
       <UserProfile />
       <TodoList />
 
-      {/* ============ ALL REACT HOOKS SHOWCASE ============ */}
+      {/* ============ ALL REACT HOOKS SHOWCASE ============ 
       <h1 style={{ textAlign: 'center', fontSize: '48px', marginTop: '60px', background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', backgroundClip: 'text', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
         🎣 React Hooks Masterclass
       </h1>
@@ -110,9 +111,11 @@ function App() {
       <UseReducerHook />
 
       {/* ============ PRO TODO APP ============ */}
-      <TodoApp />
+      {/* <TodoApp />
 
-      <Clock />
+      <Clock /> */}
+
+      <API />
     </>
   )
 }

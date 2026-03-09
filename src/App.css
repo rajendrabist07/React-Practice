@@ -1021,3 +1021,35 @@ button {
     font-size: 32px;
   }
 }
+
+.Api-box {
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px #a19f9f6d;
+  padding: 20px 32px;
+  margin-top: 2rem;
+}
+
+.result-box {
+  max-width: 800px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 30px;
+  border-radius: 15px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  margin-top: 20px;
+  box-shadow: 0 10px 20px #a19f9f6d;
+}
+
+.image-box {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.image-box img {
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
