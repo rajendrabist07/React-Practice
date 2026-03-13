@@ -24,10 +24,6 @@ import CreateProduct from './components/CreateProduct'
 
 
 
-
-
-
-
 function App() {
   const [value, setValue] = useState('')
   const [count, setCount] = useState(0);
@@ -95,7 +91,7 @@ function App() {
       <UserProfile />
       <TodoList />
 
-      {/* ============ ALL REACT HOOKS SHOWCASE ============ */}
+
       <h1 style={{ textAlign: 'center', fontSize: '48px', marginTop: '60px', background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', backgroundClip: 'text', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
         🎣 React Hooks Masterclass
       </h1>
@@ -112,7 +108,7 @@ function App() {
       <UseCallbackHook />
       <UseReducerHook />
 
-      {/* ============ PRO TODO APP ============ */}
+
       <TodoApp />
 
       <Clock />
@@ -120,6 +116,8 @@ function App() {
 
       <DogAPI />
       <CreateProduct />
+
+      <API />
     </>
   )
 }

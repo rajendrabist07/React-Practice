@@ -1,0 +1,147 @@
+.ui-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: Arial;
+  background: #f5f7fb;
+  margin-top: 4rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* form */
+.ui-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ui-form input {
+  flex: 1;
+  min-width: 220px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.ui-form button {
+  background: #6366f1;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.ui-form button:hover {
+  background: #4f46e5;
+}
+
+/* GRID CENTER FIX */
+.ui-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 300px));
+  justify-content: center;
+  gap: 25px;
+}
+
+/* CARD */
+.ui-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  width: 100%;
+  max-width: 300px;
+}
+
+.ui-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
+}
+
+/* IMAGE */
+.ui-img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+}
+
+.ui-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.4s;
+}
+
+.ui-card:hover img {
+  transform: scale(1.12);
+}
+
+/* CONTENT */
+.ui-content {
+  padding: 15px;
+  text-align: center;
+}
+
+.ui-content h3 {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.ui-content p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+/* CONTROLS */
+.ui-controls {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.ui-controls select {
+  padding: 8px;
+  border-radius: 6px;
+}
+
+/* PAGINATION */
+.ui-pagination {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.ui-pagination button {
+  padding: 8px 16px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.ui-pagination button:hover {
+  background: #333;
+  transform: scale(1.05);
+}
+
+/* MOBILE */
+@media (max-width: 500px) {
+  .ui-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ui-card {
+    max-width: 100%;
+  }
+}
